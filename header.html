@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/main.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>footer</title>
+
+<div class="wrapper">
+    <div class="navbar" id="myNav">
+        <img id="cLogo" src="images/Logo.png" alt="Company Logo">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="aboutcats.html">About The Cats</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="appointment.html">Book An Appointment</a>
+        
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+            document.getElementById("content").style.opacity = "0";
+        } else {
+            x.className = "navbar";
+            document.getElementById("content").style.opacity = "1";
+        }
+    }
+</script>
